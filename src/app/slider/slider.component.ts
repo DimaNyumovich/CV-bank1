@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, EventEmitter, Output} from '@angular/core';
 import { Options } from 'ng5-slider';
 
 @Component({
@@ -19,5 +19,17 @@ export class SliderComponent implements OnInit {
     floor: 0,
     ceil: 100
   };
+
+  @Output() changeSalary = new EventEmitter<{minS: number, maxS: number}>();
+
+
+  toChangeVolue() {
+    //debugger
+    this.changeSalary.emit({
+      minS: this.value,
+      maxS: this.highValue
+    })
+
+  }
 
 }

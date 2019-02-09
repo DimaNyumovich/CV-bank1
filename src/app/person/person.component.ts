@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Person} from '../person';
 import {Name, Contact, Experience} from '../name';
 import {EnrollmentService} from '../enrollment.service';
+
 // import { Options } from 'ng5-slider';
 
 @Component({
@@ -11,7 +12,7 @@ import {EnrollmentService} from '../enrollment.service';
 })
 export class PersonComponent implements OnInit {
 
-  constructor(private _enrollservice:EnrollmentService) {
+  constructor(private _enrollservice: EnrollmentService) {
   }
 
   persons: Person[] = [];
@@ -20,7 +21,8 @@ export class PersonComponent implements OnInit {
   experience: Experience = new Experience('Backend', 3, 3);
   contact: Contact = new Contact('Israel', '', 1234567, 'test@test.com');
 
-  person = new Person(null,this.name, this.experience, this.contact, '');
+  person = new Person(null, this.name, this.experience,
+    this.contact, '', 0, 100);
 
   ngOnInit() {
   }
@@ -28,7 +30,7 @@ export class PersonComponent implements OnInit {
   loadPersons() {
     this._enrollservice
       .getPersons()
-      .subscribe((persons:Person[]) => this.persons = persons)
+      .subscribe((persons: Person[]) => this.persons = persons);
   }
 
   onSubmit() {
@@ -37,10 +39,18 @@ export class PersonComponent implements OnInit {
         (person: Person) => {
           this.persons.push(person);
           console.log(JSON.stringify(person, undefined, 2));
-          console.log("hello from component!");
+          console.log('hello from component!');
           console.log(JSON.stringify(this.persons, undefined, 2));
-          },
+        },
         error => console.log('Error!', error)
-      )
+      );
   }
+
+
+  updateSalary({minS, maxS}) {
+    this.person.minSalary = minS;
+    this.person.maxSalary = maxS;
+    console.log('val',this.person.minSalary,"high", this.person.maxSalary)
+  }
+
 }

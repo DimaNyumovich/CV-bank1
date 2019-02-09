@@ -7,7 +7,9 @@ export class Person {
     public name: Name,
     public experience: Experience,
     public contact: Contact,
-    public description: string
+    public description: string,
+    public minSalary: number,
+    public maxSalary: number
   ) {}
 
 }

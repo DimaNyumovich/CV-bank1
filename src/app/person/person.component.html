@@ -72,7 +72,7 @@
                 [(ngModel)]="person.description"></textarea>
     </div>
 
-    <app-slider></app-slider>
+    <app-slider (changeSalary)="updateSalary($event)"></app-slider>
 
     <button class="btn badge-primary" type="submit">Submit form</button>
 
