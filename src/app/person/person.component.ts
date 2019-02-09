@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Person} from '../person';
 import {Name, Contact, Experience} from '../name';
 import {EnrollmentService} from '../enrollment.service';
+// import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'app-person',
