@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <h1>Person data</h1>
+
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+    {{userForm.value | json}}
+    <hr/>
+    {{ person | json}}
+
+
+    <div ngModelGroup="name">
+      <label>1 Name</label>
+      <div class="form-group">
+        <input type="text" class="form-control" name="firsName"
+               placeholder="first name*" [(ngModel)]="person.name.firstName">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="lastName"
+               placeholder="last name*" [(ngModel)]="person.name.lastName">
+      </div>
+    </div>
+
+    <div ngModelGroup="experience">
+      <label>2 Experience</label>
+      <div class="form-group">
+        <input type="text" class="form-control" name="position"
+               placeholder="position" [(ngModel)]="person.experience.position">
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" name="years"
+               placeholder="experience years" [(ngModel)]="person.experience.years">
+      </div>
+      <button class="btn badge-primary" type="button"> +</button>
+      <div class="form-group">
+        <input type="number" class="form-control" name="totalYears"
+               placeholder="total experience years" [(ngModel)]="person.experience.totalYears">
+      </div>
+    </div>
+
+    <div ngModelGroup="details">
+      <label>3 Contact info</label>
+      <div class="form-group">
+        <input type="text" class="form-control" name="residence"
+               placeholder="residence" [(ngModel)]="person.contact.residence">
+      </div>
+      <div class="form-group">
+        <input type="date" class="form-control" name="birthday"
+               placeholder="birthday" [(ngModel)]="person.contact.birthday">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" name="phone"
+               placeholder="phone*" [(ngModel)]="person.contact.phone">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="email"
+               placeholder="email*" [(ngModel)]="person.contact.email">
+      </div>
+      <!--<div class="form-group">-->
+      <!--<input type="url" class="form-control" name="linkedin"-->
+      <!--placeholder="linkedin link" [(ngModel)]="personModel.contact.email">-->
+      <!--</div>-->
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" name="position"
+             placeholder="position" [(ngModel)]="person.experience.position">
+    </div>
+
+    <div class="form-group">
+      <label>Description:</label>
+      <textarea class="form-control" rows="5" name="description"
+                [(ngModel)]="person.description"></textarea>
+    </div>
+
+    <button class="btn badge-primary" type="submit">Submit form</button>
+
+  </form>
+
+
+</div>
+<hr/>
+
+<div class="col-xs-8 col-xs-offset-2">
+  <button class="btn btn-primary" (click)="loadPersons()">Load persons</button>
+  <hr>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let person of persons">
+      {{person | json}}
+      <hr/>
+    </li>
+  </ul>
+
+</div>
