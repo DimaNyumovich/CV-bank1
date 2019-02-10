@@ -9,7 +9,7 @@
 
 
     <div ngModelGroup="name">
-      <label>1 Name</label>
+      <label>1 Name:</label>
       <div class="form-group">
         <input type="text" class="form-control" name="firsName"
                placeholder="first name*" [(ngModel)]="person.name.firstName">
@@ -21,7 +21,7 @@
     </div>
 
     <div ngModelGroup="experience">
-      <label>2 Experience</label>
+      <label>2 Experience:</label>
       <div class="form-group">
         <input type="text" class="form-control" name="position"
                placeholder="position" [(ngModel)]="person.experience.position">
@@ -38,7 +38,7 @@
     </div>
 
     <div ngModelGroup="details">
-      <label>3 Contact info</label>
+      <label>3 Contact info:</label>
       <div class="form-group">
         <input type="text" class="form-control" name="residence"
                placeholder="residence" [(ngModel)]="person.contact.residence">
@@ -67,14 +67,27 @@
     </div>
 
     <div class="form-group">
-      <label>Description:</label>
+      <label>4 Description:</label>
       <textarea class="form-control" rows="5" name="description"
                 [(ngModel)]="person.description"></textarea>
     </div>
 
-    <app-slider (changeSalary)="updateSalary($event)"></app-slider>
+    <div class="form-group">
+      <label>5 Choose salary range:</label>
+      <app-slider (changeSalary)="updateSalary($event)"></app-slider>
+    </div>
 
-    <button class="btn badge-primary" type="submit">Submit form</button>
+    <div class="form-group">
+      <label>6 Skills:</label>
+
+    </div>
+
+    <div>
+      <tag-input name="skills" [(ngModel)]='skills'></tag-input>
+      <hr/>
+    </div>
+
+    <button class="btn badge-primary" type="submit" (click)="saveSkills()">Submit form</button>
 
   </form>
 

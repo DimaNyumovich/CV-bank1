@@ -22,3 +22,9 @@ export class Experience {
   ){}
 }
 
+export class Skill {
+  constructor(
+    public display: string,
+    public value: string){}
+}
+

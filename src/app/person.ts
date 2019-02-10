@@ -1,4 +1,4 @@
-import {Name, Experience, Contact} from './name';
+import {Name, Experience, Contact, Skill} from './name';
 
 
 export class Person {
@@ -9,7 +9,8 @@ export class Person {
     public contact: Contact,
     public description: string,
     public minSalary: number,
-    public maxSalary: number
+    public maxSalary: number,
+    public skills: Skill[]
   ) {}
 
 }

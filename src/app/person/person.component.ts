@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Person} from '../person';
-import {Name, Contact, Experience} from '../name';
+import {Name, Contact, Experience, Skill} from '../name';
 import {EnrollmentService} from '../enrollment.service';
 
 // import { Options } from 'ng5-slider';
@@ -22,7 +22,9 @@ export class PersonComponent implements OnInit {
   contact: Contact = new Contact('Israel', '', 1234567, 'test@test.com');
 
   person = new Person(null, this.name, this.experience,
-    this.contact, '', 0, 100);
+    this.contact, '', 0, 100, []);
+
+  skills: Skill[] = [{display:'java',value:'key'}];
 
   ngOnInit() {
   }
@@ -50,7 +52,11 @@ export class PersonComponent implements OnInit {
   updateSalary({minS, maxS}) {
     this.person.minSalary = minS;
     this.person.maxSalary = maxS;
-    console.log('val',this.person.minSalary,"high", this.person.maxSalary)
+    // console.log('val',this.person.minSalary,"high", this.person.maxSalary)
   }
 
+  saveSkills() {
+    console.log(this.skills)
+    this.person.skills = this.skills;
+  }
 }
