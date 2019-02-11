@@ -11,6 +11,7 @@ import {AppComponent} from './app.component';
 import {PersonComponent} from './person/person.component';
 import {EnrollmentService} from './enrollment.service';
 import { SliderComponent } from './slider/slider.component';
+import { TagsComponent } from './tags/tags.component';
 // import { NgxChipsComponent } from './ngx-chips/ngx-chips.component';
 
 
@@ -19,7 +20,8 @@ import { SliderComponent } from './slider/slider.component';
   declarations: [
     AppComponent,
     PersonComponent,
-    SliderComponent
+    SliderComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,

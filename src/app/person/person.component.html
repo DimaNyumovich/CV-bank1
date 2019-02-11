@@ -83,11 +83,13 @@
     </div>
 
     <div>
-      <tag-input name="skills" [(ngModel)]='skills'></tag-input>
+      <!--<tag-input name="skills" [(ngModel)]='skills'></tag-input>-->
+      <app-tags (changeSkills)="addSkills($event)"
+                (removeSkills)="removeSkills($event)"></app-tags>
       <hr/>
     </div>
 
-    <button class="btn badge-primary" type="submit" (click)="saveSkills()">Submit form</button>
+    <button class="btn badge-primary" type="submit">Submit form</button>
 
   </form>
 

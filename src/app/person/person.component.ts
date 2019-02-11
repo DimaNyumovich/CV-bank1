@@ -3,7 +3,6 @@ import {Person} from '../person';
 import {Name, Contact, Experience, Skill} from '../name';
 import {EnrollmentService} from '../enrollment.service';
 
-// import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'app-person',
@@ -55,8 +54,26 @@ export class PersonComponent implements OnInit {
     // console.log('val',this.person.minSalary,"high", this.person.maxSalary)
   }
 
-  saveSkills() {
-    console.log(this.skills)
-    this.person.skills = this.skills;
+
+  addSkills({display, value}) {
+    console.log("person");
+    // debugger;
+    this.person.skills.push({display, value});
+    console.log(this.person.skills)
+    this.skills
+    // debugger
+  }
+
+  removeSkills({display, value}) {
+    debugger
+    this.person.skills.splice(this.person.skills.indexOf({display, value}), 1);
+    // debugger
+    // this.person.skills = this.person.skills.filter(obj => obj !== {display, value})
+    console.log({display, value})
+    console.log(this.person.skills)
+    debugger
+    console.log(this.person.skills)
+
+
   }
 }

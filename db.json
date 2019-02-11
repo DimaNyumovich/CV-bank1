@@ -18,10 +18,18 @@
         "email": "test@test.com"
       },
       "description": "",
-      "minSalary": {
-        "minS": 34,
-        "maxS": 65
-      }
+      "minSalary": 0,
+      "maxSalary": 100,
+      "skills": [
+        {
+          "display": "1",
+          "value": "1"
+        },
+        {
+          "display": "4",
+          "value": "4"
+        }
+      ]
     },
     {
       "id": 2,
@@ -41,8 +49,30 @@
         "email": "test@test.com"
       },
       "description": "",
-      "minSalary": 28,
-      "maxSalary": 68
+      "minSalary": 0,
+      "maxSalary": 100,
+      "skills": [
+        {
+          "display": "1",
+          "value": "1"
+        },
+        {
+          "display": "4",
+          "value": "4"
+        },
+        {
+          "display": "5",
+          "value": "5"
+        },
+        {
+          "display": "6",
+          "value": "6"
+        },
+        {
+          "display": "7",
+          "value": "7"
+        }
+      ]
     },
     {
       "id": 3,
@@ -62,8 +92,22 @@
         "email": "test@test.com"
       },
       "description": "",
-      "minSalary": 16,
-      "maxSalary": 60
+      "minSalary": 0,
+      "maxSalary": 100,
+      "skills": [
+        {
+          "display": "1",
+          "value": "1"
+        },
+        {
+          "display": "4",
+          "value": "4"
+        },
+        {
+          "display": "5",
+          "value": "5"
+        }
+      ]
     },
     {
       "id": 4,
@@ -85,11 +129,7 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        "java",
-        "js",
-        "typrscript"
-      ]
+      "skills": []
     },
     {
       "id": 5,
@@ -112,9 +152,26 @@
       "minSalary": 0,
       "maxSalary": 100,
       "skills": [
-        "java",
-        "js",
-        "typrscript"
+        {
+          "display": "1",
+          "value": "1"
+        },
+        {
+          "display": "2",
+          "value": "2"
+        },
+        {
+          "display": "3",
+          "value": "3"
+        },
+        {
+          "display": "4",
+          "value": "4"
+        },
+        {
+          "display": "5",
+          "value": "5"
+        }
       ]
     },
     {
@@ -138,10 +195,13 @@
       "minSalary": 0,
       "maxSalary": 100,
       "skills": [
-        "typrscript",
         {
-          "display": "python",
-          "value": "python"
+          "display": "1",
+          "value": "1"
+        },
+        {
+          "display": "2",
+          "value": "2"
         }
       ]
     },
@@ -166,8 +226,30 @@
       "minSalary": 0,
       "maxSalary": 100,
       "skills": [
-        "java",
-        "js"
+        {
+          "display": "1",
+          "value": "1"
+        },
+        {
+          "display": "2",
+          "value": "2"
+        },
+        {
+          "display": "2",
+          "value": "2"
+        },
+        {
+          "display": "3",
+          "value": "3"
+        },
+        {
+          "display": "4",
+          "value": "4"
+        },
+        {
+          "display": "5",
+          "value": "5"
+        }
       ]
     },
     {
@@ -188,250 +270,20 @@
         "email": "test@test.com"
       },
       "description": "",
-      "minSalary": 7,
-      "maxSalary": 70,
-      "skills": [
-        "java",
-        "js",
-        {
-          "display": "python",
-          "value": "python"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 7,
-      "maxSalary": 70,
-      "skills": [
-        "java",
-        "js"
-      ]
-    },
-    {
-      "id": 10,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 7,
-      "maxSalary": 70,
+      "minSalary": 0,
+      "maxSalary": 100,
       "skills": [
         {
-          "display": "qqq",
-          "value": "qqq"
+          "display": "kkk",
+          "value": "kkk"
         },
         {
-          "display": "www",
-          "value": "www"
+          "display": "jjj",
+          "value": "jjj"
         },
         {
-          "display": "eee",
-          "value": "eee"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 0,
-      "maxSalary": 100,
-      "skills": [
-        "java",
-        "js"
-      ]
-    },
-    {
-      "id": 12,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 0,
-      "maxSalary": 100,
-      "skills": [
-        "java",
-        "js",
-        {
-          "display": "ttt",
-          "value": "ttt"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 0,
-      "maxSalary": 100,
-      "skills": [
-        "java",
-        "js",
-        {
-          "display": "ttt",
-          "value": "ttt"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 0,
-      "maxSalary": 100,
-      "skills": [
-        {
-          "display": "java",
-          "value": "dddfdfdf"
-        },
-        {
-          "display": "jil",
-          "value": "jil"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 0,
-      "maxSalary": 100,
-      "skills": [
-        {
-          "display": "java",
-          "value": "key"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": {
-        "firstName": "Dima",
-        "lastName": "KU"
-      },
-      "experience": {
-        "position": "Backend",
-        "years": 3,
-        "totalYears": 3
-      },
-      "contact": {
-        "residence": "Israel",
-        "birthday": "",
-        "phone": 1234567,
-        "email": "test@test.com"
-      },
-      "description": "",
-      "minSalary": 0,
-      "maxSalary": 100,
-      "skills": [
-        {
-          "display": "java",
-          "value": "key"
-        },
-        {
-          "display": "rrr",
-          "value": "rrr"
-        },
-        {
-          "display": "ttt",
-          "value": "ttt"
+          "display": "hhh",
+          "value": "hhh"
         }
       ]
     }
