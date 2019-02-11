@@ -20,16 +20,10 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "1",
-          "value": "1"
-        },
-        {
-          "display": "4",
-          "value": "4"
-        }
-      ]
+      "skills": {
+        "qqqq": "qqqq",
+        "www": "www"
+      }
     },
     {
       "id": 2,
@@ -51,28 +45,9 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "1",
-          "value": "1"
-        },
-        {
-          "display": "4",
-          "value": "4"
-        },
-        {
-          "display": "5",
-          "value": "5"
-        },
-        {
-          "display": "6",
-          "value": "6"
-        },
-        {
-          "display": "7",
-          "value": "7"
-        }
-      ]
+      "skills": {
+        "python": "python"
+      }
     },
     {
       "id": 3,
@@ -94,20 +69,12 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "1",
-          "value": "1"
-        },
-        {
-          "display": "4",
-          "value": "4"
-        },
-        {
-          "display": "5",
-          "value": "5"
-        }
-      ]
+      "skills": {
+        "python": "python",
+        "rrr": "rrr",
+        "ttt": "ttt",
+        "yyy": "yyy"
+      }
     },
     {
       "id": 4,
@@ -129,7 +96,9 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": []
+      "skills": {
+        "rrr": "rrr"
+      }
     },
     {
       "id": 5,
@@ -151,28 +120,11 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "1",
-          "value": "1"
-        },
-        {
-          "display": "2",
-          "value": "2"
-        },
-        {
-          "display": "3",
-          "value": "3"
-        },
-        {
-          "display": "4",
-          "value": "4"
-        },
-        {
-          "display": "5",
-          "value": "5"
-        }
-      ]
+      "skills": {
+        "python": "python",
+        "fff": "fff",
+        "ddd": "ddd"
+      }
     },
     {
       "id": 6,
@@ -194,16 +146,12 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "1",
-          "value": "1"
-        },
-        {
-          "display": "2",
-          "value": "2"
-        }
-      ]
+      "skills": {
+        "python": "python",
+        "rrr": "rrr",
+        "eee": "eee",
+        "ww": "ww"
+      }
     },
     {
       "id": 7,
@@ -225,32 +173,9 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "1",
-          "value": "1"
-        },
-        {
-          "display": "2",
-          "value": "2"
-        },
-        {
-          "display": "2",
-          "value": "2"
-        },
-        {
-          "display": "3",
-          "value": "3"
-        },
-        {
-          "display": "4",
-          "value": "4"
-        },
-        {
-          "display": "5",
-          "value": "5"
-        }
-      ]
+      "skills": {
+        "wwww": "wwww"
+      }
     },
     {
       "id": 8,
@@ -272,20 +197,61 @@
       "description": "",
       "minSalary": 0,
       "maxSalary": 100,
-      "skills": [
-        {
-          "display": "kkk",
-          "value": "kkk"
-        },
-        {
-          "display": "jjj",
-          "value": "jjj"
-        },
-        {
-          "display": "hhh",
-          "value": "hhh"
-        }
-      ]
+      "skills": {
+        "python": "python"
+      }
+    },
+    {
+      "id": 9,
+      "name": {
+        "firstName": "Dima",
+        "lastName": "KU"
+      },
+      "experience": {
+        "position": "Backend",
+        "years": 3,
+        "totalYears": 3
+      },
+      "contact": {
+        "residence": "Israel",
+        "birthday": "",
+        "phone": 1234567,
+        "email": "test@test.com"
+      },
+      "description": "",
+      "minSalary": 0,
+      "maxSalary": 100,
+      "skills": {
+        "python": "python",
+        "eee": "eee",
+        "rrr": "rrr",
+        "ttt": "ttt"
+      }
+    },
+    {
+      "id": 10,
+      "name": {
+        "firstName": "Dima",
+        "lastName": "KU"
+      },
+      "experience": {
+        "position": "Backend",
+        "years": 3,
+        "totalYears": 3
+      },
+      "contact": {
+        "residence": "Israel",
+        "birthday": "",
+        "phone": 1234567,
+        "email": "test@test.com"
+      },
+      "description": "",
+      "minSalary": 0,
+      "maxSalary": 100,
+      "skills": {
+        "eee": "eee",
+        "ttt": "ttt"
+      }
     }
   ]
 }

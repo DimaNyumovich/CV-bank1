@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Person} from '../person';
-import {Name, Contact, Experience, Skill} from '../name';
+import {Name, Contact, Experience} from '../name';
 import {EnrollmentService} from '../enrollment.service';
 
 
@@ -21,10 +21,10 @@ export class PersonComponent implements OnInit {
   contact: Contact = new Contact('Israel', '', 1234567, 'test@test.com');
 
   person = new Person(null, this.name, this.experience,
-    this.contact, '', 0, 100, []);
+    this.contact, '', 0, 100, {'python': 'python'});
 
-  skills: Skill[] = [{display:'java',value:'key'}];
-
+  // skills: Skill[] = [{display:'java',value:'key'}];
+  skills = {'java': 'java'}
   ngOnInit() {
   }
 
@@ -51,29 +51,30 @@ export class PersonComponent implements OnInit {
   updateSalary({minS, maxS}) {
     this.person.minSalary = minS;
     this.person.maxSalary = maxS;
-    // console.log('val',this.person.minSalary,"high", this.person.maxSalary)
   }
 
 
   addSkills({display, value}) {
     console.log("person");
-    // debugger;
-    this.person.skills.push({display, value});
-    console.log(this.person.skills)
-    this.skills
-    // debugger
+    this.person.skills[value] = display;
+    // console.log(this.person.skills)
   }
 
-  removeSkills({display, value}) {
-    debugger
-    this.person.skills.splice(this.person.skills.indexOf({display, value}), 1);
-    // debugger
-    // this.person.skills = this.person.skills.filter(obj => obj !== {display, value})
-    console.log({display, value})
-    console.log(this.person.skills)
-    debugger
-    console.log(this.person.skills)
+  // removeSkills({display, value}) {
+  //   debugger
+  //   this.person.skills.splice(this.person.skills.indexOf({display, value}), 1);
+  //   // debugger
+  //   // this.person.skills = this.person.skills.filter(obj => obj !== {display, value})
+  //   console.log({display, value})
+  //   console.log(this.person.skills)
+  //   debugger
+  //   console.log(this.person.skills)
 
+  removeSkills({display, value}) {
+    // debugger
+    delete this.person.skills[value]
+    // debugger
+    console.log(this.person.skills)
 
   }
 }
