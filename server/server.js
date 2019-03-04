@@ -24,7 +24,7 @@ app.get('/persons', function (req, res) {
         birthday: '',
         phone: 1234567,
         email: 'test@test.com' } },
-  { name: { firstName: 'Dima', lastName: 'KU' },
+  { name: { firstName: 'Dima', lastName: 'KU000' },
     experience: { position: 'Backend', years: 3, totalYears: 3 },
     contact:
     { residence: 'Israel',
@@ -43,8 +43,9 @@ app.get('/persons', function (req, res) {
 
 app.post('/persons', function (req, res) {
   console.log(req.body);
-  console.log('HHHHHHHHHHHHHHHHHHHHHHHHh');
+  debugger;
   res.status(200).send({"message": "Data received"});
+  console.log('add.post - server')
 });
 
 app.listen(PORT, function () {
